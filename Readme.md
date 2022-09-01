@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Мария Елистратова](https://up.htmlacademy.ru/htmlcss/34/user/1756717).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
