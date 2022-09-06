@@ -280,15 +280,18 @@
             </a>
           </section>
           <section class="mailing">
-            <h2 class="visually-hidden">Рассылка</h2>
-            <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
-              что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="mailing-form" method="post" action="https://echo.htmlacademy.ru/">
-              <input class="mailing-form-input" type="email" name="mailing" id="mailing"
-                placeholder="email@example.com">
-              <label class="visually-hidden" for="mailing">Введите email</label>
-              <button class="mailing-button button" type="button">Отправить</button>
-            </form>
+            <div class="mailing-inner">
+              <h2 class="visually-hidden">Рассылка</h2>
+              <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
+                вкусного,
+                что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="mailing-form" method="post" action="https://echo.htmlacademy.ru/">
+                <input class="mailing-form-input" type="email" name="mailing" id="mailing"
+                  placeholder="email@example.com">
+                <label class="visually-hidden" for="mailing">Введите email</label>
+                <button class="mailing-button button button-pink" type="button">Отправить</button>
+              </form>
+            </div>
           </section>
         </div>
         <section class="delivery">
@@ -314,18 +317,20 @@
                   placeholder="ул. Большая Конюшенная, 19/8">
                 <label class="visually-hidden" for="date">Введите адрес</label>
               </div>
-              <button class="delivery-button button" type="button">Отправить</button>
+              <button class="delivery-button button button-pink" type="button">Отправить</button>
             </form>
           </div>
         </section>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts-title">Адрес главного офиса и офлайн-магазина:</p>
-          <p class="contacts-text contacts-address">наб.реки Карповки, 5 лит П, Санкт-Петербург</p>
-          <p class="contacts-title">Для заказов по телефону:</p>
-          <a class="contacts-text contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <p class="contacts-phone-mark">(с 10 до 20 ежедневно)</p>
-          <button class="contacts-connection-link button" type="button">Форма обратной связи</button>
+          <div class="contacts-wrapper">
+            <p class="contacts-title">Адрес главного офиса и офлайн-магазина:</p>
+            <p class="contacts-text contacts-address">наб.реки Карповки, 5 лит П, Санкт-Петербург</p>
+            <p class="contacts-title">Для заказов по телефону:</p>
+            <a class="contacts-text contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <p class="contacts-phone-mark">(с 10 до 20 ежедневно)</p>
+            <button class="contacts-connection-link button button-pink" type="button">Форма обратной связи</button>
+          </div>
         </section>
       </main>
       <footer class="main-footer">
