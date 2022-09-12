@@ -428,11 +428,14 @@ img {
 }
 
 .gifts-title {
-  margin-top: 80px;
+  max-width: 450px;
+  margin: 80px auto 55px auto;
+  text-align: center;
 }
 
 .gifts-subtitle {
-  margin: 0;
+  max-width: 328px;
+  margin: 0 0 28px 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -440,12 +443,21 @@ img {
 }
 
 .gifts-text {
-  margin: 0;
+  max-width: 328px;
+  margin: 0 0 28px 0;
   color: var(--extra-dark);
+}
+
+.gifts-layout-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+  margin-bottom: 81px;
 }
 
 .gifts-wrapper {
   min-height: 268px;
+  padding: 36px 0 36px 36px;
   background-color: var(--neutral-pink);
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -472,10 +484,29 @@ img {
   list-style: none;
 }
 
+.popular-title {
+  max-width: 530px;
+  margin: 0 auto 106px auto;
+  text-align: center;
+}
+
+.popular .catalog-list {
+  margin-bottom: 80px;
+}
+
 /*Catalog*/
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px 24px 40px;
   background-color: var(--extra-light);
+  border-radius: 8px;
+}
+
+.catalog-img-wrapper {
+  margin: -50px 0 16px 0;
 }
 
 .catalog-item-img {
@@ -484,15 +515,17 @@ img {
 }
 
 .catalog-item-title {
-  margin: 0;
+  margin: 0 0 8px 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
   color: var(--extra-dark);
 }
 
 .catalog-item-text {
-  margin: 0;
+  margin: 0 0 16px 0;
+  text-align: center;
 }
 
 .catalog-item-price {
@@ -504,10 +537,21 @@ img {
 }
 
 .catalog-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
   color: var(--extra-light);
   background-color: var(--extra-bright-pink);
   border: none;
   border-radius: 26px;
+}
+
+.catalog-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: 190px;
 }
 
 /*About*/
@@ -741,6 +785,9 @@ img {
 }
 
 .catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px 30px;
   margin: 0;
   padding: 0;
   list-style: none;
