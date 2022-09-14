@@ -913,11 +913,41 @@ img {
 
 /*Breadcrumbs*/
 
+.catalog-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-title {
+  margin: 0 0 40px 0;
+}
+
 .breadcrumbs-list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 16px 0;
   padding: 0;
   list-style: none;
+  order: -1;
 }
+
+.breadcrumbs-item:not(:last-child) {
+  position: relative;
+  margin-right: 28px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  right: -24px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/breadcrumbs-icon.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+
 
 .breadcrumbs-link {
   font-size: 14px;
