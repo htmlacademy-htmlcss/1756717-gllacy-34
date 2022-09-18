@@ -1065,7 +1065,7 @@ img {
 
 .mailing {
   padding: 6px;
-  background-image: repeating-linear-gradient(-45deg, var(--extra-bright-pink),  var(--extra-bright-pink) 8px, var(--light) 8px, var(--light) 24px,  var(--blue) 24px, var(--blue) 32px, var(--light) 32px, var(--light) 48px);
+  background-image: url("../images/background-mailing.jpg");
   border-radius: 16px;
 }
 
