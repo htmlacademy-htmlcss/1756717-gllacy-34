@@ -734,7 +734,7 @@ img {
 
 .slider-pagination-button:active {
   background-color: var(--extra-light-5);
-  border: 1px solid transparent;
+  border: 1px solid var(--extra-light-5);
 }
 
 .slider-pagination-button:disabled {
@@ -944,9 +944,33 @@ img {
   height: 32px;
   color: var(--extra-light);
   background-color: var(--extra-bright-pink);
-  border: none;
+  border: 2px solid var(--extra-bright-pink);
   border-radius: 26px;
   cursor: pointer;
+}
+
+.catalog-item-button:hover {
+  color: var(--extra-dark);
+  background-color: var(--extra-light-3);
+  border: 2px solid var(--extra-bright-pink);
+}
+
+.catalog-item-button:focus {
+  color: var(--extra-light);
+  background-color: var(--extra-bright-pink);
+  border: 2px solid var(--extra-dark);
+}
+
+.catalog-item-button:active {
+  color: var(--extra-dark);
+  background-color: var(--extra-light-pink);
+  border: 2px solid var(--extra-bright-pink);
+}
+
+.catalog-item-button:disabled {
+  color: var(--dark);
+  background-color: var(--neutral);
+  border: 2px solid var(--neutral);
 }
 
 .catalog-price-wrapper {
