@@ -102,7 +102,11 @@
                   <input class="popover-enter-input input" type="password" name="password" id="password" value="111111"
                     required>
                   <div class="popover-enter-button-wrapper">
-                    <button class="button button-pink button-popover-enter" type="submit">Войти</button>
+                    <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                    <button class="button button-pink button-popover-enter" type="submit">
+                      <span>Войти</span>
+                      <span class="loader"></span>
+                    </button>
                     <div class="popover-enter-link-wrapper">
                       <a class="popover-enter-link" href="#">Забыли пароль?</a>
                       <a class="popover-enter-link" href="#">Регистрация</a>
@@ -154,7 +158,11 @@
                   </li>
                 </ul>
                 <div class="cart-open-button-wrapper">
-                  <a class="button button-pink cart-open-button" href="#">Оформить заказ</a>
+                  <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                  <a class="button button-pink cart-open-button" href="#">
+                    <span>Оформить заказ</span>
+                    <span class="loader"></span>
+                  </a>
                   <p class="cart-total">Итого: 790 ₽</p>
                 </div>
               </div>
@@ -176,7 +184,11 @@
                 <h3 class="slider-title">Нежный пломбир с&nbsp;клубничным джемом</h3>
                 <p class="slider-text">Натуральное мороженое из свежих сливок
                   и&nbsp;молока с вкуснейшим клубничным джемом<br>– это идеальный десерт для всей семьи. </p>
-                <button class="slider-button button" type="button">Заказать</button>
+                <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                <button class="slider-button button" type="button">
+                  <span>Заказать</span>
+                  <span class="loader"></span>
+                </button>
               </div>
               <div class="slider-img-wrapper">
                 <img class="slider-img" src="images/slider-strawberry.png" width="306" height="507"
@@ -189,7 +201,11 @@
                 <p class="slider-text">Сливочное мороженое с ярким банановым<br>вкусом подарит вам свежесть и наслаждение<br>
                   даже
                   в самый жаркий летний день.</p>
-                <button class="slider-button button" type="button">Заказать</button>
+                <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                <button class="slider-button button" type="button">
+                  <span>Заказать</span>
+                  <span class="loader"></span>
+                </button>
               </div>
               <div class="slider-img-wrapper">
                 <img class="slider-img" src="images/slider-banana.png" width="306" height="507"
@@ -202,7 +218,11 @@
                 <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет<br>
                   сердца
                   сладкоежек всех возрастов.</p>
-                <button class="slider-button button" type="button">Заказать</button>
+                <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                <button class="slider-button button" type="button">
+                  <span>Заказать</span>
+                  <span class="loader"></span>
+                </button>
               </div>
               <div class="slider-img-wrapper">
                 <img class="slider-img" src="images/slider-marshmellow.png" width="306" height="507"
@@ -294,14 +314,24 @@
               <h3 class="gifts-subtitle">Малинка даром!</h3>
               <p class="gifts-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
                 варенья бесплатно.</p>
-              <a class="gifts-link button" href="#">Хочу подарок</a>
+              <!--Для отображения состояния disabled нужно добавить класс is-disabled-->
+              <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+              <a class="gifts-link button" href="#">
+                <span>Хочу подарок</span>
+                <span class="loader"></span>
+              </a>
             </div>
             <div class="gifts-marshmallow gifts-wrapper">
               <h3 class="gifts-subtitle">Маршмеллоу даром!</h3>
               <p class="gifts-text">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных
                 зефирок&nbsp;совершенно
                 бесплатно.</p>
-              <a class="gifts-link button" href="#">Хочу подарок</a>
+              <!--Для отображения состояния disabled нужно добавить класс is-disabled-->
+              <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+              <a class="gifts-link button" href="#">
+                <span>Хочу подарок</span>
+                <span class="loader"></span>
+              </a>
             </div>
           </div>
         </section>
@@ -430,7 +460,11 @@
                 <input class="mailing-form-input" type="email" name="mailing" id="mailing"
                   placeholder="email@example.com">
                 <label class="visually-hidden" for="mailing">Введите email</label>
-                <button class="mailing-button button button-pink" type="submit">Отправить</button>
+                <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                <button class="mailing-button button button-pink" type="submit">
+                  <span>Отправить</span>
+                  <span class="loader"></span>
+                </button>
               </form>
             </div>
           </section>
@@ -474,7 +508,11 @@
                 <input class="delivery-form-input" type="text" name="address" id="address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </div>
-              <button class="delivery-button button button-pink" type="button">Отправить</button>
+              <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+              <button class="delivery-button button button-pink" type="button">
+                <span>Отправить</span>
+                <span class="loader"></span>
+              </button>
             </form>
           </div>
         </section>
@@ -486,7 +524,11 @@
             <p class="contacts-title">Для заказов по телефону:</p>
             <a class="contacts-text contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="contacts-phone-mark">(с 10 до 20 ежедневно)</p>
-            <button class="contacts-connection-link button button-pink" type="button">Форма обратной связи</button>
+            <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+            <button class="contacts-connection-link button button-pink" type="button">
+              <span>Форма обратной связи</span>
+              <span class="loader"></span>
+            </button>
           </div>
         </section>
       </main>

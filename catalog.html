@@ -102,7 +102,11 @@
                   <input class="popover-enter-input input" type="password" name="password" id="password" value="111111"
                     required>
                   <div class="popover-enter-button-wrapper">
-                    <button class="button button-pink button-popover-enter" type="submit">Войти</button>
+                    <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                    <button class="button button-pink button-popover-enter" type="submit">
+                      <span>Войти</span>
+                      <span class="loader"></span>
+                    </button>
                     <div class="popover-enter-link-wrapper">
                       <a class="popover-enter-link" href="#">Забыли пароль?</a>
                       <a class="popover-enter-link" href="#">Регистрация</a>
@@ -154,7 +158,11 @@
                   </li>
                 </ul>
                 <div class="cart-open-button-wrapper">
-                  <a class="button button-pink cart-open-button" href="#">Оформить заказ</a>
+                  <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+                  <a class="button button-pink cart-open-button" href="#">
+                    <span>Оформить заказ</span>
+                    <span class="loader"></span>
+                  </a>
                   <p class="cart-total">Итого: 790 ₽</p>
                 </div>
               </div>
@@ -472,7 +480,7 @@
               <div class="catalog-img-wrapper">
                 <img class="catalog-item-img" src="images/catalog-11.jpg" width="168" height="168" alt="Орешек">
               </div>
-              <h3 class="catalog-item-titlee">Орешек</h3>
+              <h3 class="catalog-item-title">Орешек</h3>
               <p class="catalog-item-text">Фисташковый пломбир с шоколадным сиропом</p>
               <div class="catalog-price-wrapper">
                 <p class="catalog-item-price">360 ₽/кг</p>
@@ -507,7 +515,12 @@
               </div>
             </li>
           </ul>
-          <a class="button catalog-button" href="#">Показать еще</a>
+          <!--Для отображения состояния disabled нужно добавить класс is-disabled-->
+          <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+          <a class="button catalog-button" href="#">
+            <span>Показать еще</span>
+            <span class="loader"></span>
+          </a>
           <div class="pagination">
             <a class="button pagination-control" href="#">
               <span class="visually-hidden">Назад</span>
