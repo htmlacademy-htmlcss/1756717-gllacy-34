@@ -618,7 +618,6 @@ img {
   order: 1;
 }
 
-
 .slider-img {
   display: block;
   width: 100%;
@@ -654,11 +653,11 @@ img {
 .slider-buttons {
   position: absolute;
   top: 50%;
-  left: 62%;
+  left: 47.3%;
   display: flex;
   justify-content: space-between;
   min-width: 348px;
-  transform: translate(-50%, -62%);
+  transform: translateY(-50%);
 }
 
 .slider-button-nav {
@@ -672,6 +671,30 @@ img {
   border: 2px solid var(--extra-light);
   border-radius: 26px;
   cursor: pointer;
+}
+
+.slider-button-nav:hover {
+  color: var(--extra-dark);
+  background-color: var(--extra-light);
+}
+
+.slider-button-nav:focus {
+  color: var(--extra-dark);
+  background-color: var(--extra-light-3);
+  border: 2px solid var(--extra-dark);
+  outline: none;
+}
+
+.slider-button-nav:active {
+  color: var(--extra-dark);
+  background-color: var(--extra-light-5);
+  border: 2px solid transparent;
+}
+
+.slider-button-nav:disabled {
+  background-color: var(--extra-light-3);
+  border: 2px solid var(--extra-light);
+  opacity: 0.4;
 }
 
 .slider-footer {
@@ -694,13 +717,33 @@ img {
   width: 12px;
   height: 12px;
   background-color: var(--extra-light-3);
-  border: none;
+  border: 1px solid transparent;
   border-radius: 50%;
   cursor: pointer;
 }
 
+.slider-pagination-button:hover {
+  border: 1px solid var(--extra-light);
+}
+
+.slider-pagination-button:focus {
+  background-color: var(--extra-light-3);
+  border: 1px solid var(--extra-dark);
+  outline: none;
+}
+
+.slider-pagination-button:active {
+  background-color: var(--extra-light-5);
+  border: 1px solid transparent;
+}
+
+.slider-pagination-button:disabled {
+  opacity: 0.1;
+}
+
 .slider-pagination-button-current {
   background-color: var(--extra-light);
+  pointer-events: none;
 }
 
 /*Socials*/
@@ -716,7 +759,62 @@ img {
 }
 
 .socials-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--extra-light);
+  border-radius: 50%;
+}
+
+.socials-link::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--extra-dark);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  content: "";
+}
+
+.social-border {
+  stroke: var(--extra-light-3);
+}
+
+.socials-link:hover::before{
+  display: block;
+}
+
+.socials-link:hover .social-border{
+  stroke: var(--extra-light-5);
+}
+
+.socials-link:focus::before {
+  display: block;
+}
+
+.socials-link:focus {
+  outline: none;
+}
+
+.socials-link:focus .social-border{
+  stroke: var(--extra-dark);
+}
+
+.socials-link:active::before {
+  display: block;
+}
+
+.socials-link:active {
+  opacity: 0.5;
+}
+
+.socials-link:active .social-border{
+  stroke: var(--extra-light-5);
 }
 
 /*Gifts*/
@@ -1493,6 +1591,18 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.delete-cart-item-button:hover {
+  opacity: 0.7;
+}
+
+.delete-cart-item-button:active {
+  opacity: 0.5;
+}
+
+.delete-cart-item-button:disabled {
+  opacity: 0.1;
 }
 
 .cart-open-button-wrapper {
