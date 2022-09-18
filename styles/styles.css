@@ -1013,47 +1013,9 @@ img {
 }
 
 .about-item {
-  position: relative;
-  padding-left: 56px;
-}
-
-.about-item::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 48px;
-  background-color: transparent;
-  border: 2px solid var(--extra-dark);
-  border-radius: 50%;
-  content: "";
-}
-
-.about-item::after {
-  position: absolute;
-  top: 50%;
-  left: 7px;
-  width: 48px;
-  height: 48px;
-  background-repeat: no-repeat;
-  transform: translateY(-50%);
-  content: "";
-}
-
-.about-item-1::after {
-  background-image: url("../images/ice-cream.svg");
-}
-
-.about-item-2::after {
-  background-image: url("../images/cow.svg");
-}
-
-.about-item-3::after {
-  background-image: url("../images/leaf.svg");
-}
-
-.about-item-4::after {
-  background-image: url("../images/thermometer.svg");
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  column-gap: 16px;
 }
 
 /*News*/
