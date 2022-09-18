@@ -1031,7 +1031,7 @@ img {
   display: flex;
   min-height: 224px;
   padding: 32px 0 0 32px;
-  background-image: url("../images/background-blog.png");
+  background-image: url("../images/background-blog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
