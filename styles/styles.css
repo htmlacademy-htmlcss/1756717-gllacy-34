@@ -247,6 +247,10 @@ img {
 
 /*Input*/
 
+.input {
+  cursor: pointer;
+}
+
 .input:not(:placeholder-shown) {
   color: var(--extra-dark);
 }
@@ -1102,7 +1106,7 @@ img {
   display: flex;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
-  background-image: url("../images/background-mailing.png");
+  background-image: url("../images/background-delivery.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1206,6 +1210,14 @@ img {
   color: var(--extra-dark);
 }
 
+.contacts-phone:hover {
+  opacity: 0.7;
+}
+
+.contacts-phone:active {
+  opacity: 0.5;
+}
+
 .contacts-phone-mark {
   margin: 0 0 32px 0;
   font-size: 14px;
@@ -1267,8 +1279,28 @@ img {
   text-decoration: none;
 }
 
+.footer-menu-link:hover {
+  opacity: 0.7;
+}
+
+.footer-menu-link:active {
+  opacity: 0.5;
+}
+
 .footer-menu-item:first-child .footer-menu-link {
   font-weight: 700;
+}
+
+.copyright-link {
+  display: inline-block;
+}
+
+.copyright-link:hover {
+  opacity: 0.7;
+}
+
+.copyright-link:active {
+  opacity: 0.5;
 }
 
 .copyright-text {
@@ -1279,6 +1311,14 @@ img {
 
 .copyright-text-link {
   color: var(--extra-dark);
+}
+
+.copyright-text-link:hover {
+  opacity: 0.7;
+}
+
+.copyright-text-link:active {
+  opacity: 0.5;
 }
 
 /*Breadcrumbs*/
@@ -1730,7 +1770,7 @@ img {
 
 /*Tooltip*/
 
-.delivery-form-tooltip-wrapper {
+.delivery-form-field-group {
   position: relative;
 }
 
@@ -1743,6 +1783,9 @@ img {
 }
 
 .tooltip-toggle {
+  position: absolute;
+  top: 30%;
+  left: 4px;
   display: block;
   width: 100%;
   height: 100%;
@@ -1751,6 +1794,7 @@ img {
   background-image: url("../images/tooltip-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -1762,8 +1806,8 @@ img {
 
 .tooltip-text {
   position: absolute;
-  top: 0;
-  left: 100px;
+  top: -10px;
+  left: 110px;
   display: none;
   width: 169px;
   margin-right: 15px;
@@ -1785,14 +1829,16 @@ img {
 }
 
 .tooltip-text::after {
-  /*доработать*/
   position: absolute;
-  left: 100%;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border: 7px solid transparent;
-  border-left: 7px solid var(--white);
+  left: -7px;
+  top: 30%;
+  width: 13px;
+  height: 13px;
+  border: 1px solid var(--neutral);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  background-color: var(--white);
+  transform: rotate(45deg);
+  z-index: 2;
   content: "";
 }
