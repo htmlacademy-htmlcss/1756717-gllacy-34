@@ -225,7 +225,8 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input-radio visually-hidden" type="radio" name="fat" value="up-to-ten" checked>
+                    <input class="control-input-radio visually-hidden" type="radio" name="fat" value="up-to-ten"
+                      checked>
                     <span class="control-mark-radio"></span>
                     <span class="control-label">до 10%</span>
                   </label>
@@ -248,51 +249,51 @@
             </fieldset>
           </div>
           <div class="catalog-filter-wrapper">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-legend">Наполнители</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input-checkbox visually-hidden" type="checkbox" name="chocolate" checked>
-                  <span class="control-mark-checkbox"></span>
-                  <span class="control-label">шоколадные</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input-checkbox visually-hidden" type="checkbox" name="sugar" checked>
-                  <span class="control-mark-checkbox"></span>
-                  <span class="control-label">сахарные посыпки</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input-checkbox visually-hidden" type="checkbox" name="fruit">
-                  <span class="control-mark-checkbox"></span>
-                  <span class="control-label">фрукты</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input-checkbox visually-hidden" type="checkbox" name="syrup">
-                  <span class="control-mark-checkbox"></span>
-                  <span class="control-label">сиропы</span>
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input-checkbox visually-hidden" type="checkbox" name="jam">
-                  <span class="control-mark-checkbox"></span>
-                  <span class="control-label">джемы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="catalog-filter-button button" type="submit">Применить</button>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-legend">Наполнители</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="chocolate" checked>
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">шоколадные</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="sugar" checked>
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">сахарные посыпки</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="fruit">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">фрукты</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="syrup">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">сиропы</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="jam">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">джемы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="catalog-filter-button button" type="submit">Применить</button>
           </div>
         </form>
         <section class="catalog-cards">
-          <ul class="catalog-list">
+          <ul class="catalog-list main-catalog-list">
             <li class="catalog-item">
               <div class="catalog-img-wrapper">
                 <img class="catalog-item-img" src="images/catalog-1.jpg" width="168" height="168" alt="Малинка">
@@ -522,40 +523,52 @@
               </div>
             </li>
           </ul>
-          <!--Для отображения состояния disabled нужно добавить класс is-disabled-->
-          <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
-          <a class="button catalog-button" href="#">
-            <span>Показать еще</span>
-            <span class="loader"></span>
-          </a>
-          <div class="pagination">
-            <a class="button pagination-control" href="#">
-              <span class="visually-hidden">Назад</span>
+          <div class="catalog-footer-wrapper">
+            <!--Для отображения состояния disabled нужно добавить класс is-disabled-->
+            <!--Для отображения состояния загрузки нужно добавить класс is-loading-->
+            <a class="button catalog-button" href="#">
+              <span>Показать еще</span>
+              <span class="loader"></span>
             </a>
-            <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item pagination-item-current">
-                <a class="pagination-link pagination-link-current" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">5</a>
-              </li>
-            </ul>
-            <a class="button pagination-control" href="#">
-              <span class="visually-hidden">Вперёд</span>
-            </a>
+            <div class="pagination">
+              <a class="pagination-control pagination-control-prev is-disabled" href="#">
+                <span class="visually-hidden">Назад</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"
+                    fill="#2D3440" />
+                </svg>
+              </a>
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item pagination-item-current">
+                  <span class="pagination-link pagination-link-current">3</span>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">5</a>
+                </li>
+              </ul>
+              <a class="pagination-control pagination-control-next" href="#">
+                <span class="visually-hidden">Вперёд</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"
+                    fill="#2D3440" />
+                </svg>
+              </a>
+            </div>
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer catalog-footer">
         <div class="footer-socials socials">
           <ul class="socials-list">
             <li class="socials-item">
