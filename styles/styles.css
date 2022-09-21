@@ -319,6 +319,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 500px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -330,7 +331,7 @@ img {
 
 .main-menu-link {
   display: block;
-  padding: 8px 16px;
+  padding: 8px 15px;
   font-size: 16px;
   line-height: 20px;
   color: var(--extra-dark);
@@ -380,6 +381,7 @@ img {
   top: calc(100% + 8px);
   left: 0 ;
   min-width: 135px;
+  max-width: 150px;
   margin: 0;
   padding: 8px 0;
   list-style: none;
@@ -454,6 +456,7 @@ img {
 .user-menu {
   display: flex;
   flex-wrap: wrap;
+  max-width: 300px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -461,7 +464,7 @@ img {
 
 .user-menu-item {
   position: relative;
-  margin-right: 16px;
+  margin: 0 16px 3px 0;
 }
 
 .user-menu-item:last-child {
@@ -548,6 +551,7 @@ img {
   grid-column: 1 / 2;
   grid-template-columns: 1fr 306px;
   column-gap: 50px;
+  min-height: 507px;
   height: auto;
   width: auto;
 }
@@ -559,9 +563,18 @@ img {
 }
 
 .slider-item.slider-item-active .slider-img-wrapper {
+  min-height: 507px;
+  height: 100%;
+  width: auto;
   margin-right: 20px;
-  transform: translateX(0);
+  transform: translate(-8px, 20px);
   opacity: 1;
+}
+
+.slider-item.slider-item-active .slider-img {
+  min-height: 507px;
+  height: 100%;
+  width: auto;
 }
 
 .slider-inner {
@@ -575,9 +588,10 @@ img {
   place-items: center;
   min-width: 100px;
   width: 100%;
-  min-height: 507px;
+  max-height: 150px;
   height: 100%;
   opacity: 0.4;
+  transform: translateY(20px);
 }
 
 .slider-img-wrapper::before {
@@ -622,6 +636,12 @@ img {
   height: auto;
 }
 
+.slider-item:not(.slider-item-active) .slider-img {
+  height: auto;
+  width: auto;
+  max-height: 150px;
+}
+
 .slider-list {
   display: grid;
   grid-template-columns: 1fr 100px 100px;
@@ -634,7 +654,7 @@ img {
 }
 
 .slider-title {
-  margin: 0 0 24px 0;
+  margin: 42px 0 24px 0;
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
@@ -642,7 +662,7 @@ img {
 }
 
 .slider-text {
-  margin: 0 0 48px 0;
+  margin: 0 0 44px 0;
   font-size: 18px;
   line-height: 24px;
   color: var(--extra-dark);
@@ -651,7 +671,7 @@ img {
 .slider-buttons {
   position: absolute;
   top: 50%;
-  left: 47.3%;
+  left: 46.5%;
   display: flex;
   justify-content: space-between;
   min-width: 348px;
@@ -697,8 +717,9 @@ img {
 
 .slider-footer {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
+  margin-top: 17px;
 }
 
 .slider-pagination {
@@ -706,6 +727,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 52px;
+  max-width: 60px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -747,10 +769,10 @@ img {
 /*Socials*/
 
 .socials-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  min-width: 104px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 104px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -842,7 +864,7 @@ img {
 
 .gifts-text {
   max-width: 328px;
-  margin: 0 0 28px 0;
+  margin: 0 0 23px 0;
   color: var(--extra-dark);
 }
 
@@ -850,12 +872,13 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 30px;
-  margin-bottom: 81px;
+  margin-bottom: 79px;
 }
 
 .gifts-wrapper {
   min-height: 268px;
-  padding: 36px 0 36px 36px;
+  padding: 36px 0 33px 36px;
+  margin-bottom: 3px;
   background-color: var(--neutral-pink);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -905,7 +928,7 @@ img {
 }
 
 .catalog-img-wrapper {
-  margin: -50px 0 16px 0;
+  margin: -50px 0 10px 0;
 }
 
 .catalog-item-img {
@@ -923,7 +946,7 @@ img {
 }
 
 .catalog-item-text {
-  margin: 0 0 16px 0;
+  margin: 0 0 17px 0;
   text-align: center;
 }
 
@@ -994,7 +1017,7 @@ img {
 }
 
 .about-title {
-  margin: 0 0 56px 0;
+  margin: 0 0 54px 0;
   text-align: center;
 }
 
@@ -1014,7 +1037,7 @@ img {
 .about-item {
   display: grid;
   grid-template-columns: 48px 1fr;
-  column-gap: 16px;
+  column-gap: 17px;
 }
 
 /*News*/
@@ -1066,6 +1089,7 @@ img {
   padding: 6px;
   background-image: url("../images/background-mailing.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1118,7 +1142,7 @@ img {
 }
 
 .delivery-title {
-  margin-bottom: 24px;
+  margin: 36px 0 26px 0;
 }
 
 .delivery-text {
@@ -1126,7 +1150,7 @@ img {
 }
 
 .delivery-form-wrapper {
-  padding: 40px;
+  padding: 38px;
   background-color: var(--extra-light);
   box-shadow: 0 15px 40px var(--extra-dark-12);
   border-radius: 8px;
@@ -1135,7 +1159,8 @@ img {
 .delivery-form {
   display: grid;
   grid-template-columns: 117px 287px;
-  gap: 20px 16px;
+  align-items: end;
+  gap: 18px 16px;
 }
 
 .delivery-form-field-group:last-of-type {
@@ -1156,7 +1181,7 @@ img {
 
 .delivery-form-input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 13px 16px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -1215,7 +1240,7 @@ img {
 }
 
 .contacts-phone-mark {
-  margin: 0 0 32px 0;
+  margin: 0 0 28px 0;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1229,9 +1254,10 @@ img {
 
 .main-footer {
   display: grid;
-  grid-template-columns: 200px 1fr 193px;
+  grid-template-columns: 200px 370px 193px;
+  column-gap: 197px;
   width: 100%;
-  padding: 48px 0 57px 0;
+  padding: 40px 0 57px 0;
 }
 
 .catalog-footer {
@@ -1240,18 +1266,22 @@ img {
 }
 
 .footer-socials {
+  margin-left: 3px;
   max-width: 104px;
 }
 
 .footer-menu {
   display: flex;
   justify-content: center;
+  justify-self: center;
+  align-self: start;
+  padding-left: 33px;
 }
 
 .footer-menu-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 365px;
+  grid-template-columns: 126px 182px;
+  gap: 8px 24px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1259,7 +1289,6 @@ img {
 
 .footer-menu-item {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .footer-menu-item:first-child::before {
@@ -1274,6 +1303,7 @@ img {
 }
 
 .footer-menu-link {
+  display: block;
   font-size: 14px;
   line-height: 20px;
   color: var(--extra-dark);
@@ -1419,7 +1449,7 @@ img {
 
 .sort-control {
   min-width: 196px;
-  padding: 8px 16px;
+  padding: 8px 30px 8px 16px;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -1627,6 +1657,7 @@ img {
 
 .catalog-filter-button {
   align-self: flex-end;
+  max-width: 185px;
   padding: 8px 52px;
   font-size: 14px;
   line-height: 20px;
@@ -1693,6 +1724,7 @@ img {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 200px;
   margin: 0 8px;
   padding: 0;
   list-style: none;
